@@ -52,9 +52,15 @@
             </li>
           </ul>
         </address>
-        <svg class="humburger-icon" width="32" height="22">
-          <use href="./images/icon.svg#icon-humburger"></use>
-        </svg>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="humburger-icon" width="32" height="22">
+            <use href="./images/icon.svg#icon-humburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -589,7 +595,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="drop-icon" width="8" height="8">
@@ -651,7 +657,92 @@
           <button type="submit" class="modal-send-btn">Send</button>
         </fieldset>
       </div>
-    </div> -->
+    </div>
+    <div class="menu-container js-menu-container menu-split" id="mobile-menu">
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg class="drop-icon" width="8" height="8">
+          <use href="./images/icon.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="" class="link colored">Studio</a></li>
+        <li><a href="" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+      <div>
+        <ul class="list mobile-adress">
+          <li class="mobile-menu-number">
+            <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-menu-email">
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="list mobile-socials">
+          <li class="social-item">
+            <a
+              class="link mobile-social-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Icons"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icon.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="link mobile-social-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Icons"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icon.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="link mobile-social-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Icons"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icon.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="link mobile-social-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Icons"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icon.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
