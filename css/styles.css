@@ -560,6 +560,7 @@ body {
 
 .second-section-item {
   display: block;
+  margin-bottom: 72px;
 }
 
 .second-section-item:last-child {
@@ -569,6 +570,7 @@ body {
 @media screen and (min-width: 768px) {
   .second-section-item {
     width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
 }
 
